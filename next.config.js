@@ -6,7 +6,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: { unoptimized: true },
     sassOptions: {
-      includePaths: [
+      loadPaths: [
         path.join(__dirname, "node_modules", "@uswds", "uswds", "packages"),
       ],
       prependData: "@forward 'uswds-theme'; @forward 'uswds';",
