@@ -13,16 +13,16 @@
 
 - layout.tsx
   - metadata description
-  - image (see: lib/constants, etc)
+  - og-image (see: lib/constants, etc)
   - choose font
 - lib/constants
-  - image (see: layout)
+  - og-image (see: layout)
   - site redirects
 - public
-  - remove logos
   - remove img once image is replaced
 - src/app/
   - replace favicons
+- hero image is: public/assets/uswds/img/hero.png
 
 ## Development setup
 

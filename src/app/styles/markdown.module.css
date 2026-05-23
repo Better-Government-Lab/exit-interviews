@@ -1,0 +1,18 @@
+.markdown blockquote{
+    border-left: 4px solid #73b3e7; /* .bg-primary-light */
+    padding-left: 1em;
+}
+
+.markdown a {
+    color: #005ea2;
+    text-decoration: underline;
+}
+
+.markdown pre>code {
+    background-color: #f0f0f0; /* .bg-base-lightest */
+    overflow-x: scroll;
+    padding: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: block;
+}
