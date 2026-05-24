@@ -2,7 +2,8 @@
 const path = require("path");
 
 const nextConfig = {
-    output: "export",  // <=== enables static exports
+    output: "export",
+    basePath: "/exit-interviews",
     reactStrictMode: true,
     images: { unoptimized: true },
     sassOptions: {

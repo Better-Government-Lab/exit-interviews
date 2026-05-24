@@ -11,6 +11,7 @@
 
 ## Todos
 
+- all images get `next.config.js:basePath` (`/exit-interviews`)
 - layout.tsx
   - metadata description
   - og-image (see: lib/constants, etc)
