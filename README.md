@@ -11,6 +11,12 @@
 
 ## Todos
 
+### Now
+
+- [x] fix BuilderLink nesting issue (or eval whether it's needed)
+
+### Later
+
 - all images get `next.config.js:basePath` (`/exit-interviews`)
 - layout.tsx
   - metadata description

@@ -39,7 +39,9 @@ export const BuilderLink = ({
 
   return (
     <NextLink href={href} passHref>
-      <USWDSLink className={className}>{children}</USWDSLink>
+      {/* <USWDSLink className={className} to="{href}"> */}
+        {children}
+      {/* </USWDSLink> */}
     </NextLink>
   );
 };
