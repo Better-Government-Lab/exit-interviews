@@ -33,13 +33,13 @@ export function BuilderHeader() {
       <Header extended={true}>
           <div className="usa-navbar">
             <Title>
-              <BuilderLink href="#">
+              {/* <BuilderLink href="#">
                 <img
                   className=""
                   alt=""
                   src="#" // /assets/logos"
                 />
-              </BuilderLink>
+              </BuilderLink> */}
             </Title>
             <NavMenuButton
               aria-expanded={expanded}
