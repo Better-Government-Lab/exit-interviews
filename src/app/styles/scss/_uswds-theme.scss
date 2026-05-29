@@ -8,6 +8,7 @@
   @use 'uswds-core' with (
     // GENERAL
     $theme-image-path: "/assets/uswds/img",
+    $theme-show-notifications: false,
     $theme-color-accent-warm-lighter: #F3BE45,
     
     // TYPOGRAPHY

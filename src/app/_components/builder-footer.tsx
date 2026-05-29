@@ -68,7 +68,7 @@ export function BuilderFooter() {
       }
       secondary={
         <Grid row gap>
-          <Logo
+          {/* <Logo
             size="medium"
             image={
               <img
@@ -78,7 +78,7 @@ export function BuilderFooter() {
                 width="250"
               />
             }
-          />
+          /> */}
           <div className="usa-footer__contact-links mobile-lg:grid-col-6">
             <SocialLinks links={socialLinkItems} />
             <Address
