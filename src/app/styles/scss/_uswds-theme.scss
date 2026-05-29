@@ -1,0 +1,30 @@
+/** 
+  * These variables must be in the same order as 
+  * uswds-core/src/styles/settings/_index
+  * 
+  * AND also within each file
+  */
+
+  @use 'uswds-core' with (
+    // GENERAL
+    $theme-image-path: "/assets/uswds/img",
+    $theme-color-accent-warm-lighter: #F3BE45,
+    
+    // TYPOGRAPHY
+    $theme-font-path: "/assets/uswds/fonts",
+    $theme-font-type-sans: "public-sans",
+    
+    // COMPONENTS
+    // Accordion changes
+    $theme-accordion-border-color: "primary-lighter",
+    $theme-accordion-button-background-color: "primary-lighter",
+
+    $theme-banner-background-color: "ink",
+
+    $theme-hero-image: "/assets/uswds/img/hero.png",
+
+  
+    // SPACING
+  
+    // UTILITIES
+  );

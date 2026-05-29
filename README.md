@@ -11,18 +11,25 @@
 
 ## Todos
 
+### Now
+
+- [x] fix BuilderLink nesting issue (or eval whether it's needed)
+
+### Later
+
+- all images get `next.config.js:basePath` (`/exit-interviews`)
 - layout.tsx
   - metadata description
-  - image (see: lib/constants, etc)
+  - og-image (see: lib/constants, etc)
   - choose font
 - lib/constants
-  - image (see: layout)
+  - og-image (see: layout)
   - site redirects
 - public
-  - remove logos
   - remove img once image is replaced
 - src/app/
-  - replace favicons
+  - replace favicons (should be favicon.ico in this dir)
+- hero image is: public/assets/uswds/img/hero.png
 
 ## Development setup
 
