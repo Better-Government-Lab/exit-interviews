@@ -3,7 +3,7 @@ const path = require("path");
 
 const nextConfig = {
     output: "export",
-    basePath: "/exit-interviews",
+    // basePath: "/exit-interviews",
     reactStrictMode: true,
     images: { unoptimized: true },
     sassOptions: {
