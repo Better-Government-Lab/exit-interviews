@@ -23,14 +23,6 @@ export default async function Index() {
           </Grid>
         </GridContainer>
       </section>
-      <GridContainer>
-        <Grid>
-          <div className="usa-hero__callout usa-hero__callout--mobile-only">
-            <h1 className="usa-hero__heading">{heading}</h1>
-            <div className="usa-hero__heading--alt">{headingAlt}</div>
-          </div>
-        </Grid>
-      </GridContainer>
 
       <section aria-label="Markdown content">
         <GridContainer>

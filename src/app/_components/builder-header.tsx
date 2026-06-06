@@ -7,8 +7,31 @@ import {
   ExtendedNav,
   Title,
 } from "@trussworks/react-uswds";
-import { primaryItems, secondaryItems, NavItem } from "@/lib/navigation";
 import { BuilderLink } from "./builder-link";
+
+export type NavItem = {
+  text: string;
+  url: string;
+  className: string;
+};
+
+export const makeNavItem = (text: string, url: string, className: string = 'usa-nav__link'): NavItem => ({
+  text,
+  url,
+  className: `${className}`,
+});
+
+export const primaryItems = [
+  makeNavItem("Wins", "#wins"),
+  makeNavItem("Hard Things", "#hardThings"),
+  makeNavItem("The end of an era", "#end"),
+  makeNavItem("The future", "#future"),
+  makeNavItem("Examples", "#examples")
+];
+
+export const secondaryItems = [
+  makeNavItem("Secondary example", "https://example.com", "usa-button usa-button--outline margin-left-105 margin-bottom-2"),
+];
 
 export function BuilderHeader() {
   const [expanded, setExpanded] = useState(false);
@@ -33,13 +56,7 @@ export function BuilderHeader() {
       <Header extended={true}>
           <div className="usa-navbar">
             <Title>
-              {/* <BuilderLink href="#">
-                <img
-                  className=""
-                  alt=""
-                  src="#" // /assets/logos"
-                />
-              </BuilderLink> */}
+              Exit Interviews
             </Title>
             <NavMenuButton
               aria-expanded={expanded}
