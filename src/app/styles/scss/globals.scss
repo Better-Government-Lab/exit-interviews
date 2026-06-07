@@ -1,1 +1,40 @@
 @use "uswds-core" as *;
+
+// HEADER
+@include at-media($theme-header-min-width) {
+  .usa-header--basic {
+    .usa-navbar {
+      width: 91%;
+    }
+
+    .usa-nav {
+      @include u-padding(0);
+      justify-content: space-between;
+    }
+  }
+
+  .usa-nav-container {
+    @include u-margin-top(4);
+    @include u-margin-bottom(4);
+    @include u-padding(0);
+    @include u-bg('white');
+  }
+
+  .usa-logo {
+    @include u-border(1px);
+    @include u-margin-top(0);
+    @include u-margin-bottom(0);
+  }
+  .usa-logo__text {
+    @include u-padding(2);
+    @include u-font('sans', '2xs');
+    @include u-text('normal');
+  }
+
+  .usa-nav__primary>.usa-nav__primary-item {
+    @include u-padding-top(1px);
+    @include u-padding-bottom(1px);
+    @include u-border(1px);
+    @include u-border('ink');
+  }
+}

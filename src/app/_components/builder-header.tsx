@@ -6,6 +6,7 @@ import {
   NavMenuButton,
   ExtendedNav,
   Title,
+  PrimaryNav,
 } from "@trussworks/react-uswds";
 import { BuilderLink } from "./builder-link";
 
@@ -21,16 +22,12 @@ export const makeNavItem = (text: string, url: string, className: string = 'usa-
   className: `${className}`,
 });
 
-export const primaryItems = [
+export const items = [
   makeNavItem("Wins", "#wins"),
   makeNavItem("Hard Things", "#hardThings"),
   makeNavItem("The end of an era", "#end"),
   makeNavItem("The future", "#future"),
   makeNavItem("Examples", "#examples")
-];
-
-export const secondaryItems = [
-  makeNavItem("Secondary example", "https://example.com", "usa-button usa-button--outline margin-left-105 margin-bottom-2"),
 ];
 
 export function BuilderHeader() {
@@ -48,12 +45,12 @@ export function BuilderHeader() {
     )
   }
 
-  const primaryNavItems = primaryItems.map(createBuilderLink)
-  const secondaryNavItems = secondaryItems.map(createBuilderLink);
+  const primaryNavItems = items.map(createBuilderLink)
 
   return (
     <>
-      <Header extended={true}>
+      <Header basic={true}>
+        <div className="usa-nav-container">
           <div className="usa-navbar">
             <Title>
               Exit Interviews
@@ -64,13 +61,13 @@ export function BuilderHeader() {
               label="Menu"
             />
           </div>
-        <ExtendedNav
-            primaryItems={primaryNavItems}
-            secondaryItems={secondaryNavItems}
+          <PrimaryNav
             mobileExpanded={expanded}
             onToggleMobileNav={onClick}
+            items={primaryNavItems}
             aria-label="Primary navigation"
           />
+        </div>
       </Header>
     </>
   );
