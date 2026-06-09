@@ -1,95 +1,59 @@
 @use "uswds-core" as *;
 
-/**
- *
- * Header mods
- *
- **/
-
- .usa-banner__header-text {
-  color: #fff;
- }
-
-.usa-logo {
-  padding-left: 1.5rem;
-}
-
+// HEADER
 @include at-media($theme-header-min-width) {
+  .usa-header--basic {
+    .usa-navbar {
+      width: 91%;
+    }
+
+    .usa-nav {
+      @include u-padding(0);
+      justify-content: space-between;
+    }
+  }
+
+  .usa-nav-container {
+    @include u-margin-top(4);
+    @include u-margin-bottom(4);
+    @include u-padding(0);
+    @include u-bg('white');
+  }
+
   .usa-logo {
-    margin-bottom: 2rem;
-  } 
-  .usa-header--basic .usa-nav {
-    margin-bottom: 2.2rem;
+    @include u-border(1px);
+    @include u-margin-top(0);
+    @include u-margin-bottom(0);
+  }
+  .usa-logo__text {
+    @include u-padding(2);
+    @include u-font('sans', '2xs');
+    @include u-text('normal');
+  }
+
+  .usa-nav__primary>.usa-nav__primary-item {
+    @include u-padding-top(1px);
+    @include u-padding-bottom(1px);
+    @include u-border(1px);
+    @include u-border('ink');
+    @include u-text('normal');
+  }
+
+  .usa-hero__callout {
+    @include u-margin(4);
+    @include u-padding(0);
+    @include u-border('ink');
+    @include u-bg('white');
+    @include u-maxw('none');
   }
 }
 
-.usa-nav__primary > .usa-nav__primary-item {
-  font-size: 1rem;
-}
-
-/**
- *
- * Main
- *
- **/
-
-@include at-media($theme-header-min-width) {
-  .usa-header + .usa-section, .usa-header + main {
-    border-top: none;
-  }
-}
-
-.usa-nav__secondary-links .usa-nav__secondary-item+.usa-nav__secondary-item {
-  border-left-width: 0;
-}
-
-/**
- *
- * Footer
- *
- **/
- .usa-footer__primary-section,
- .usa-footer__secondary-section {
-  @include set-text-and-bg("white");
- }
-
-/**
- *
- * Hero
- *
- **/
-
-.usa-hero__callout {
-  &--inverse {
-    background-color: color("white");
-
-    @include at-media-max('tablet') {
-      visibility: hidden;
-    }
-
-    @include at-media("tablet") {
-      max-width: 25rem;
-      @include u-margin-top(15);
-      @include u-margin-bottom(10);
-    }
-
-    .usa-hero__heading {
-      color: color("primary-darker");
-
-      &--alt {
-        color: color("primary-darker");
-        font-size: 1.25rem;
-      }
-    }
-  }
-
-  &--mobile-only {
-    @include at-media("tablet") {
-      display: none;
-    }
-  
-    .usa-hero__heading {
-      color: color("white");
-    }
-  }
+.usa-hero__content {
+  @include u-padding-top(4);
+  @include u-padding-bottom(4);
+  @include u-border(1px);
+  @include u-border('ink');
+  @include u-text('ink');
+  @include u-text('center');
+  @include u-font('sans', '3xl');
 }

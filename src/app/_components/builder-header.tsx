@@ -6,9 +6,29 @@ import {
   NavMenuButton,
   ExtendedNav,
   Title,
+  PrimaryNav,
 } from "@trussworks/react-uswds";
-import { primaryItems, secondaryItems, NavItem } from "@/lib/navigation";
 import { BuilderLink } from "./builder-link";
+
+export type NavItem = {
+  text: string;
+  url: string;
+  className: string;
+};
+
+export const makeNavItem = (text: string, url: string, className: string = 'usa-nav__link'): NavItem => ({
+  text,
+  url,
+  className: `${className}`,
+});
+
+export const items = [
+  makeNavItem("Wins", "#wins"),
+  makeNavItem("Hard Things", "#hardThings"),
+  makeNavItem("The end of an era", "#end"),
+  makeNavItem("The future", "#future"),
+  makeNavItem("Examples", "#examples")
+];
 
 export function BuilderHeader() {
   const [expanded, setExpanded] = useState(false);
@@ -25,21 +45,15 @@ export function BuilderHeader() {
     )
   }
 
-  const primaryNavItems = primaryItems.map(createBuilderLink)
-  const secondaryNavItems = secondaryItems.map(createBuilderLink);
+  const primaryNavItems = items.map(createBuilderLink)
 
   return (
     <>
-      <Header extended={true}>
+      <Header basic={true}>
+        <div className="usa-nav-container">
           <div className="usa-navbar">
             <Title>
-              {/* <BuilderLink href="#">
-                <img
-                  className=""
-                  alt=""
-                  src="#" // /assets/logos"
-                />
-              </BuilderLink> */}
+              Exit Interviews
             </Title>
             <NavMenuButton
               aria-expanded={expanded}
@@ -47,13 +61,13 @@ export function BuilderHeader() {
               label="Menu"
             />
           </div>
-        <ExtendedNav
-            primaryItems={primaryNavItems}
-            secondaryItems={secondaryNavItems}
+          <PrimaryNav
             mobileExpanded={expanded}
             onToggleMobileNav={onClick}
+            items={primaryNavItems}
             aria-label="Primary navigation"
           />
+        </div>
       </Header>
     </>
   );

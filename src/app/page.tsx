@@ -8,34 +8,28 @@ import mdStyles from '@/app/styles/markdown.module.css';
 export default async function Index() {
   const pageContent = getPostBySlug(`one-year-since`);
   const formattedContent = await markdownToHtml(pageContent.content || "");
-  const heading = `Civic tech exit interivews`;
-  const headingAlt = `...`;
+  const heading = `Federal Civic Tech`;
+  const subhed = `Exit Interviews`;
+  const headingYear = `2025`;
 
   return (
     <main>
       <section aria-label="introduction">
         <GridContainer>
-          <Grid>
-            <div className="usa-hero__callout usa-hero__callout--inverse">
-              <h1 className="usa-hero__heading">{heading}</h1>
-              <div className="usa-hero__heading--alt">{headingAlt}</div>
-            </div>
+          <Grid row className="usa-hero__callout">
+            <Grid col={9}>
+              <Grid col className="usa-hero__content">{heading}</Grid>
+              <Grid col className="usa-hero__content">{subhed}</Grid>
+            </Grid>
+            <Grid col className="usa-hero__content text-bold text-middle">{headingYear}</Grid>
           </Grid>
         </GridContainer>
       </section>
-      <GridContainer>
-        <Grid>
-          <div className="usa-hero__callout usa-hero__callout--mobile-only">
-            <h1 className="usa-hero__heading">{heading}</h1>
-            <div className="usa-hero__heading--alt">{headingAlt}</div>
-          </div>
-        </Grid>
-      </GridContainer>
 
       <section aria-label="Markdown content">
         <GridContainer>
           <Grid row>
-            <Grid className={mdStyles['markdown']} dangerouslySetInnerHTML={{ __html: formattedContent }} />
+            <Grid className="{mdStyles['markdown']} usa-prose" dangerouslySetInnerHTML={{ __html: formattedContent }} />
           </Grid>
         </GridContainer>
       </section>
