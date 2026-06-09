@@ -46,6 +46,10 @@
     @include u-bg('white');
     @include u-maxw('none');
   }
+
+  .usa-prose>p {
+    max-width: 100%;
+  }
 }
 
 .usa-hero__content {
