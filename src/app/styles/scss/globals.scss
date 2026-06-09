@@ -36,5 +36,24 @@
     @include u-padding-bottom(1px);
     @include u-border(1px);
     @include u-border('ink');
+    @include u-text('normal');
   }
+
+  .usa-hero__callout {
+    @include u-margin(4);
+    @include u-padding(0);
+    @include u-border('ink');
+    @include u-bg('white');
+    @include u-maxw('none');
+  }
+}
+
+.usa-hero__content {
+  @include u-padding-top(4);
+  @include u-padding-bottom(4);
+  @include u-border(1px);
+  @include u-border('ink');
+  @include u-text('ink');
+  @include u-text('center');
+  @include u-font('sans', '3xl');
 }
