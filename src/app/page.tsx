@@ -29,7 +29,7 @@ export default async function Index() {
       <section aria-label="Markdown content">
         <GridContainer>
           <Grid row>
-            <Grid className={mdStyles['markdown']} dangerouslySetInnerHTML={{ __html: formattedContent }} />
+            <Grid className="{mdStyles['markdown']} usa-prose" dangerouslySetInnerHTML={{ __html: formattedContent }} />
           </Grid>
         </GridContainer>
       </section>
