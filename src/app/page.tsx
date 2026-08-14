@@ -3,8 +3,6 @@ import markdownToHtml from "@/lib/markdownToHtml";
 
 import { Grid, GridContainer } from "@trussworks/react-uswds";
 
-import mdStyles from '@/app/styles/markdown.module.css';
-
 export default async function Index() {
   const pageContent = getPostBySlug(`one-year-since`);
   const formattedContent = await markdownToHtml(pageContent.content || "");
@@ -17,11 +15,11 @@ export default async function Index() {
       <section aria-label="introduction">
         <GridContainer>
           <Grid row className="usa-hero__callout">
-            <Grid col={9}>
-              <Grid col className="usa-hero__content">{heading}</Grid>
-              <Grid col className="usa-hero__content">{subhed}</Grid>
+            <Grid col={12} tablet={{ col: 9 }}>
+              <Grid col className="usa-hero__content border-right border-bottom text-bold">{heading}</Grid>
+              <Grid col className="usa-hero__content border-right">{subhed}</Grid>
             </Grid>
-            <Grid col className="usa-hero__content text-bold text-middle">{headingYear}</Grid>
+            <Grid col className="usa-hero__content text-bold flex-align-self-center">{headingYear}</Grid>
           </Grid>
         </GridContainer>
       </section>
@@ -29,7 +27,7 @@ export default async function Index() {
       <section aria-label="Markdown content">
         <GridContainer>
           <Grid row>
-            <Grid className="{mdStyles['markdown']} usa-prose" dangerouslySetInnerHTML={{ __html: formattedContent }} />
+            <Grid className="usa-prose" dangerouslySetInnerHTML={{ __html: formattedContent.value }} />
           </Grid>
         </GridContainer>
       </section>
