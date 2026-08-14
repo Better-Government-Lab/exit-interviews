@@ -12,7 +12,52 @@
 
     // TYPOGRAPHY
     $theme-font-path: "/assets/uswds/fonts",
+    // $theme-font-type-lang: "open-dyslexic",
     $theme-font-type-sans: "public-sans",
+
+    // $theme-font-lang-custom-src: (
+    //   dir: 'open-dyslexic',
+    //   roman: (100: false,
+    //     200: false,
+    //     300: false,
+    //     400: 'OpenDyslexic-Regular',
+    //     500: false,
+    //     600: false,
+    //     700: 'OpenDyslexic-Bold',
+    //     800: false,
+    //     900: false,
+    //   ),
+    //   italic: (100: false,
+    //     200: false,
+    //     300: false,
+    //     400: 'OpenDyslexic-Italic',
+    //     500: false,
+    //     600: false,
+    //     700: 'OpenDyslexic-BoldItalic',
+    //     800: false,
+    //     900: false,
+    //   ),
+    // ),
+
+    $theme-font-role-heading: "sans",
+
+    // 2 = 10px?
+    // 3 = 14px
+    // 4 = 15px
+    // 8 = 20px
+    // 9 = 22px
+    // 15 = 48px
+    // 17 = 64px
+
+    $theme-type-scale-3xs: 2,
+    $theme-type-scale-2xs: 3,
+    $theme-type-scale-xs: 4,
+    $theme-type-scale-sm: 5,
+    $theme-type-scale-md: 8, // reset
+    $theme-type-scale-lg: 9,
+    $theme-type-scale-xl: 12,
+    $theme-type-scale-2xl: 14,
+    $theme-type-scale-3xl: 17, // reset
 
     // COLORS
     $theme-color-accent-warm-lightest: #FFF5EE,
