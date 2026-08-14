@@ -4,7 +4,7 @@
 @include at-media($theme-header-min-width) {
   .usa-header--basic {
     .usa-navbar {
-      width: 91%;
+      width: 78%;
     }
 
     .usa-nav {
@@ -24,40 +24,69 @@
     @include u-border(1px);
     @include u-margin-top(0);
     @include u-margin-bottom(0);
-  }
-  .usa-logo__text {
-    @include u-padding(2);
-    @include u-font('sans', '2xs');
-    @include u-text('normal');
+
+    &__text {
+      @include u-padding(2);
+      @include u-font('sans', 'sm');
+      @include u-text('normal');
+    }
   }
 
   .usa-nav__primary>.usa-nav__primary-item {
-    @include u-padding-top(1px);
+    @include u-padding-top(2px);
     @include u-padding-bottom(1px);
+    @include u-font('sans', 'sm');
     @include u-border(1px);
     @include u-border('ink');
-    @include u-text('normal');
+    
+    >a {
+      @include u-text('normal');
+    }
   }
+}
 
-  .usa-hero__callout {
-    @include u-margin(4);
-    @include u-padding(0);
-    @include u-border('ink');
-    @include u-bg('white');
-    @include u-maxw('none');
-  }
-
-  .usa-prose>p {
-    max-width: 100%;
-  }
+.usa-hero__callout {
+  @include u-margin(4);
+  @include u-padding(0);
+  @include u-border('ink');
+  @include u-bg('white');
+  @include u-maxw('none');
 }
 
 .usa-hero__content {
   @include u-padding-top(4);
   @include u-padding-bottom(4);
-  @include u-border(1px);
-  @include u-border('ink');
   @include u-text('ink');
   @include u-text('center');
   @include u-font('sans', '3xl');
+}
+
+.usa-prose {
+  h1, h2, h3, h4, p {
+    @include u-maxw('tablet');
+    @include u-margin-left('auto');
+    @include u-margin-right('auto');
+  }
+
+  h1 {
+    @include u-margin-top(1);
+  }
+
+  h2 {
+    @include u-margin-top(3);
+  }
+
+  h4 {
+    color: #d54309;
+    @include u-text('bold');
+  }
+
+  >p {
+    @include u-font('sans', 'md');
+  }
+
+  .subhed {
+    @include u-maxw('none');
+    @include u-font('sans', 'lg');
+  }
 }
