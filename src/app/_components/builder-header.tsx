@@ -22,12 +22,14 @@ export const makeNavItem = (text: string, url: string, className: string = 'usa-
   className: `${className}`,
 });
 
+// if you change these and they don't look right, go to
+// globals.scss and adjust .usa-header--basic.usa-navbar width
 export const items = [
   makeNavItem("Wins", "#wins"),
-  makeNavItem("Hard Things", "#hardThings"),
+  makeNavItem("Barriers", "#barriers"),
   makeNavItem("The end of an era", "#end"),
-  makeNavItem("The future", "#future"),
-  makeNavItem("Examples", "#examples")
+  makeNavItem("Direct File", "#df"),
+  makeNavItem("The project", "#project")
 ];
 
 export function BuilderHeader() {
