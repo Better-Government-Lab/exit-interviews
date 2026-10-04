@@ -1,10 +1,10 @@
 @use "uswds-core" as *;
 
-// HEADER
 @include at-media($theme-header-min-width) {
+  // HEADER
   .usa-header--basic {
     .usa-navbar {
-      width: 84%; // edit for header width adjustments
+      width: 86%; // edit for header width adjustments
     }
 
     .usa-nav {
@@ -45,6 +45,7 @@
   }
 }
 
+// HERO
 .usa-hero__callout {
   @include u-margin(4);
   @include u-padding(0);
@@ -61,8 +62,9 @@
   @include u-font('sans', '3xl');
 }
 
+// md content
 .usa-prose {
-  h1, h2, h3, h4, p {
+  h1, h2, h3, h4, p, ul {
     @include u-maxw('tablet');
     @include u-margin-left('auto');
     @include u-margin-right('auto');
@@ -86,8 +88,14 @@
     @include u-font('sans', 'md');
   }
 
+  // subhed
   .subhed {
     @include u-maxw('none');
     @include u-font('sans', 'lg');
+  }
+
+  .blockquote {
+    @include u-font('sans', 'lg');
+    @include u-text('bold');
   }
 }
