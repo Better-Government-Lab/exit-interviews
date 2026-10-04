@@ -9,15 +9,25 @@ In addition, we also focused in-depth on one major civic tech project, the creat
 
 Here we share some of the major themes emerging from our interviews, and invite you to explore the voices and perspectives of federal tech workers who, during their time in government, worked diligently towards improving digital services for the American public.
 
-> Who we interviewed
-> Learn more about  the roles and tenures of those included in the interviews at the end
-> Learn more
+<div class="usa-card">
+  <div class="usa-card__container">
+    <div class="usa-card__header">
+      <h4 class="usa-card__heading">Who we interviewed</h4>
+    </div>
+    <div class="usa-card__body">
+      <p>Learn more about  the roles and tenures of those included in the interviews at the end</p>
+    </div>
+    <div class="usa-card__footer">
+      <a href="#project" class="usa-button usa-button--unstyled">Learn more</a>
+    </div>
+  </div>
+</div>
 
 We view this work as part of a broader effort to better understand the relationship between technology and government. The archive of interviews is a public good available to all who care about this topic, including media, policymakers, civic technologists and researchers. The Better Government Lab is undertaking its own analysis of the interviews (you can find links to our papers below).
 
 #### Chapter 1
 
-# Wins
+<h1 id="wins">Wins</h1>
 
 The successes of the civic tech movement extended beyond the creation or improvement of digital tools. When asked about their greatest successes and the most satisfying aspects of their work, interviewees reflected on the changes they saw as outcomes of their work: a growing culture of transparency and collaboration, capacity building inside agencies, the spread of agile and human centered design practices, and reduced burdens for government workers and the public.
 
@@ -72,7 +82,7 @@ Reducing administrative burden was one of the clearest ways civic technologists 
 
 #### Chapter 2
 
-# Barriers to progress
+<h1 id="barriers">Barriers to progress</h1>
 
 Civic technologists described a learning curve applying modern tech principles in highly regulated agency environments with disconnected data systems. Friction in workplace culture, outdated technology, as well as hiring rules, were often cited as barriers to larger federal technology transformation.
 
@@ -120,7 +130,7 @@ With their “clocks ticking,” term limited teams often pursued high visibilit
 
 #### Chapter 3
 
-# The end of an era
+<h1 id="end">The end of an era</h1>
 
 ## Chaos
 
@@ -164,7 +174,7 @@ The result would be integrating civic tech practices into the core of government
 
 #### Chapter 4
 
-# The life and death of Direct File
+<h1 id="df">The life and death of Direct File</h1>
 
 ## Subhed
 
@@ -182,7 +192,7 @@ The result would be integrating civic tech practices into the core of government
 
 #### Appendix
 
-# About the project
+<h1 id="project">About the project</h1>
 
 ## Who we interviewed
 
