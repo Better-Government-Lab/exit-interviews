@@ -4,7 +4,7 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import { Grid, GridContainer } from "@trussworks/react-uswds";
 
 export default async function Index() {
-  const pageContent = getPostBySlug(`one-year-since`);
+  const pageContent = getPostBySlug(`exit-interviews`);
   const formattedContent = await markdownToHtml(pageContent.content || "");
   const heading = `Federal Civic Tech`;
   const subhed = `Exit Interviews`;
