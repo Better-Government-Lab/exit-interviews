@@ -74,6 +74,7 @@
 
   h2 {
     @include u-margin-top(3);
+    @include u-font('sans', 'xl')
   }
 
   h4 {
