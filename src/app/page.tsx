@@ -4,6 +4,7 @@ import { Carousel } from 'nuka-carousel';
 
 import { Grid, GridContainer } from "@trussworks/react-uswds";
 import { BuilderLink } from './_components/builder-link';
+import { CarouselItem } from './_components/carousel-item';
 
 export default function Index() {
   const heading = `Federal Civic Tech`;
@@ -77,9 +78,9 @@ export default function Index() {
                   </div>
                   <div className="usa-card__body">
                     <Carousel showDots showArrows wrapMode="wrap">
-                      <div className="height-card width-mobile-lg">"18F was by far the most rewarding experience in my federal life, just because it felt like we were trying to disrupt the status quo. We were sharing everything we were learning, we were advocating for vendors that do good work.”</div>
-                      <div className="height-card width-mobile-lg">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                      <div className="height-card width-mobile-lg">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                      <CarouselItem content='"18F was by far the most rewarding experience in my federal life, just because it felt like we were trying to disrupt the status quo. We were sharing everything we were learning, we were advocating for vendors that do good work."' />
+                      <CarouselItem content ='"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."' />
+                      <CarouselItem content='"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."' />
                     </Carousel>
                   </div>
                 </div>

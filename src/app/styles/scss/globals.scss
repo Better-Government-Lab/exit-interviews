@@ -62,10 +62,9 @@
   @include u-font('sans', '3xl');
 }
 
-// md content
+// content
 .usa-prose {
-  h1, h2, h3, h4, p, ul, blockquote,
-  .usa-card {
+  h1, h2, h3, h4, p, ul, blockquote, .usa-card {
     @include u-maxw('tablet');
     @include u-margin-left('auto');
     @include u-margin-right('auto');
@@ -99,4 +98,13 @@
     @include u-font('sans', 'lg');
     @include u-text('bold');
   }
+}
+
+.carousel-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  @include u-height('card');
+  @include u-width(36rem);
+  @include u-padding-left(7);
+  @include u-padding-right(7);
 }
