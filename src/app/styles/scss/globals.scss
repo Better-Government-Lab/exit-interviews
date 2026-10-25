@@ -64,7 +64,8 @@
 
 // md content
 .usa-prose {
-  h1, h2, h3, h4, p, ul {
+  h1, h2, h3, h4, p, ul, blockquote,
+  .usa-card {
     @include u-maxw('tablet');
     @include u-margin-left('auto');
     @include u-margin-right('auto');
