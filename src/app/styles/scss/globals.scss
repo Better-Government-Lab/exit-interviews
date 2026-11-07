@@ -1,4 +1,5 @@
 @use "uswds-core" as *;
+@use "hero";
 
 @include at-media($theme-header-min-width) {
   // HEADER
@@ -44,8 +45,6 @@
     }
   }
 }
-
-
 
 // content
 .usa-prose {
@@ -217,3 +216,4 @@
     @include u-padding-right(2);
   }
 }
+
