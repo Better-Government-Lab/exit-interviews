@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Plus Jakarta Sans:Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://static.figma.com/font/PlusJakartaSans_wght__2') format('woff2');
+}
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', 'Plus Jakarta Sans:Bold', sans-serif;
+  --color-ux: #d95f02;
+  --color-leadership: #1e7a8e;
+  --color-product: #f5a254;
+  --color-ops: #c8c8c8;
+  --color-data: #a8e0f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  color: #111827;
+  font-family: var(--font-sans);
+}
+
+button {
+  font: inherit;
+}
+
+.visualization-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  background: transparent;
+}
+
+.visualization {
+  width: 100%;
+  max-width: 710px;
+}
+
+.chart-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.chart-heading {
+  max-width: 20rem;
+}
+
+.chart-eyebrow {
+  margin: 0 0 0.75rem;
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.chart-title {
+  margin: 0;
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+.chart-key {
+  flex-shrink: 0;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1f2937;
+  font-size: 0.875rem;
+}
+
+.legend-swatch {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.participant-total {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.chart {
+  position: relative;
+}
+
+.bars,
+.axis-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.bars {
+  align-items: flex-end;
+  padding-bottom: 0;
+  border-bottom: 2px solid #111827;
+}
+
+.bar-column {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.bar-stack {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  max-width: 36px;
+}
+
+.bar-segment {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: filter 150ms ease;
+}
+
+.bar-segment:hover {
+  filter: brightness(0.94);
+}
+
+.bar-segment:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+.segment-graphic {
+  display: block;
+}
+
+.axis-labels {
+  margin-top: 0.75rem;
+}
+
+.axis-label {
+  flex: 1 1 0%;
+  min-width: 0;
+  color: #1f2937;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.chart-tooltip {
+  position: absolute;
+  z-index: 10;
+  width: 220px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
+.chart-tooltip p {
+  margin: 0;
+}
+
+.tooltip-title {
+  padding-right: 1.25rem;
+  color: #111827;
+  font-weight: 700;
+}
+
+.tooltip-count {
+  margin-top: 0.125rem !important;
+  color: #374151;
+}
+
+.tooltip-tenure {
+  margin-top: 0.125rem !important;
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.tooltip-dismiss {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.tooltip-dismiss:hover {
+  color: #111827;
+}
+
+.tooltip-dismiss:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (min-width: 640px) {
+  .chart-header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .bars,
+  .axis-labels {
+    gap: 1.25rem;
+  }
+
+  .bar-stack {
+    max-width: none;
+  }
+
+  .axis-label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar-segment {
+    transition: none;
+  }
+}
