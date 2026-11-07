@@ -46,96 +46,103 @@
 }
 
 
-@include at-media("tablet") {
-  // content
-  .usa-prose {
+
+// content
+.usa-prose {
+  @include at-media("tablet") {
     h1, h2, h3, h4, p, ul, blockquote, .usa-card {
       @include u-maxw('tablet');
       @include u-margin-left('auto');
       @include u-margin-right('auto');
     }
+  }
 
-    h1 {
-      @include u-margin-top(1);
+  @include at-media-max('tablet') {
+    .usa-card {
+      @include u-maxw(20rem);
     }
+  }
 
-    h2 {
-      @include u-margin-top(3);
-      @include u-font('sans', 'xl')
-    }
+  h1 {
+    @include u-margin-top(1);
+  }
 
-    h4 {
-      @include u-text('bold');
-      @include u-margin-top(15);
-    }
+  h2 {
+    @include u-margin-top(3);
+    @include u-font('sans', 'xl')
+  }
 
-    >p {
-      @include u-font('sans', 'md');
+  h4 {
+    @include u-text('bold');
+    @include at-media("tablet") {
+      @include u-margin-top(neg-15);
     }
+    @include at-media-max("tablet") {
+      @include u-margin-top(-360px);
+    }
+  }
 
-    // subhed
-    .subhed {
-      @include u-maxw('none');
-      @include u-font('sans', 'lg');
-    }
+  >p {
+    @include u-font('sans', 'md');
+  }
 
-    .blockquote {
-      @include u-font('sans', 'lg');
-      @include u-text('bold');
-    }
+  // subhed
+  .subhed {
+    @include u-maxw('none');
+    @include u-font('sans', 'lg');
+  }
+
+  .blockquote {
+    @include u-font('sans', 'lg');
+    @include u-text('bold');
   }
 }
 
-// small screens
-@include at-media-max('tablet') {
-  .usa-prose .usa-card {
-    @include u-maxw(20rem);
-  }
-}
 
 .challenge-coins {
-  position: absolute;
+  position: relative;
 
   &--cms {
     @include at-media("tablet") {
       &-r {
-        right: 0;
+        left: 658px;
       }
 
       &-l {
-        right: 98px;
+        left: 294px;
+        bottom: 29px;
       }
     }
 
     @include at-media-max("tablet") {
       &-r {
-        right: -75px;
+        left: 200px;
       }
     
       &-l {
-        right: 23px;
+        left: 78px;
+        bottom: 294px
       }
     }
   }
 
   &--usds {
     @include at-media("tablet") {
-      &-l {
-        left: 0;
-      }
-
       &-r {
-        left: 98px
+        left: -120px;
+        bottom: 18px;
       }
     }
 
     @include at-media-max("tablet") {
       &-l {
         left: -75px;
+        bottom: 19px;
       }
 
       &-r {
-        left: 23px;
+        left: 47px;
+        bottom: 333px;
       }
     }
   }
@@ -143,21 +150,24 @@
   &--18f {
     @include at-media("tablet") {
       &-r {
-        right: 0;
+        left: 383px;
+        bottom: -51px;
       }
 
       &-l {
-        right: 98px;
+        left: 527px;
+        bottom: 63px;
       }
     }
 
     @include at-media-max("tablet") {
       &-r {
-        right: -75px;
+        left: 148px;
+        bottom: 320px;
       }
 
       &-l {
-        right: 23px;
+        bottom: 73px;
       }
     }
   }
@@ -165,21 +175,25 @@
   &--df {
     @include at-media("tablet") {
       &-l {
-        left: 0;
+        left: 100px;
+        bottom: 69px;
       }
 
       &-r {
-        left: 98px
+        left: -252px;
+        bottom: -25px;
       }
     }
 
     @include at-media-max("tablet") {
       &-l {
-        left: -75px;
+        left: -25px;
+        bottom: 74px;
       }
 
       &-r {
-        left: 23px;
+        left: 148px;
+        bottom: 320px;
       }
     }
   }

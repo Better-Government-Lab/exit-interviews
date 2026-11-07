@@ -307,13 +307,13 @@ export default function Index() {
                 width={250}
                 height={250}
                 alt=''
-                className="challenge-coins challenge-coins--usds-l"
+                className="challenge-coins challenge-coins--df-l"
               />
               <Image src="/assets/img/df-front.png"
                 width={250}
                 height={250}
                 alt=''
-                className="challenge-coins challenge-coins--usds-r"
+                className="challenge-coins challenge-coins--df-r"
               />
 
               <h4 className="text-right">Chapter 4</h4>
