@@ -1,36 +1,5 @@
 # Civic tech exit interviews
 
-- static site with html, css, js
-- no react, it's a simple one page thing. and even if it goes to multiple pages, html+css+js makes sense for this one to start
-
-## Questions
-
-- use existing stylesheet or custom uswds?
-- mobile designs
-- doing the fancy css
-
-## Todos
-
-### Now
-
-- [x] fix BuilderLink nesting issue (or eval whether it's needed)
-
-### Later
-
-- all images get `next.config.js:basePath` (`/exit-interviews`)
-- layout.tsx
-  - metadata description
-  - og-image (see: lib/constants, etc)
-  - choose font
-- lib/constants
-  - og-image (see: layout)
-  - site redirects
-- public
-  - remove img once image is replaced
-- src/app/
-  - replace favicons (should be favicon.ico in this dir)
-- hero image is: public/assets/uswds/img/hero.png
-
 ## Development setup
 
 Prerequisites
