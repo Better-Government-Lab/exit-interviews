@@ -6,25 +6,12 @@ import { Carousel } from 'nuka-carousel';
 import { Grid, GridContainer } from "@trussworks/react-uswds";
 import { BuilderLink } from './_components/builder-link';
 import { CarouselItem } from './_components/carousel-item';
+import { Hero } from './_components/hero';
 
 export default function Index() {
-  const heading = `Federal Civic Tech`;
-  const subhed = `Exit Interviews`;
-  const headingYear = `2025`;
-
   return (
     <main>
-      {/* <section aria-label="introduction">
-        <GridContainer>
-          <Grid row className="usa-hero__callout">
-            <Grid col={12} tablet={{ col: 9 }}>
-              <Grid col className="usa-hero__content border-right border-bottom text-bold">{heading}</Grid>
-              <Grid col className="usa-hero__content border-right">{subhed}</Grid>
-            </Grid>
-            <Grid col className="usa-hero__content text-bold flex-align-self-center">{headingYear}</Grid>
-          </Grid>
-        </GridContainer>
-      </section> */}
+      <Hero />
 
       <section aria-label="Markdown content">
         <GridContainer>
