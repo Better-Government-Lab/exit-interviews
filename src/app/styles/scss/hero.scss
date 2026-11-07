@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hero {
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  overflow: hidden;
+  padding: 2rem 1.25rem;
+}
+
+.title-lockup {
+  container-type: inline-size;
+  display: flex;
+  width: min(915px, 100%);
+  flex-direction: column;
+  align-items: center;
+  gap: 14px 22px;
+}
+
+.hero-title {
+  color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10.6cqw;
+  font-weight: 700;
+  line-height: 81px;
+  letter-spacing: 0.97px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.handwritten-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.handwritten-title {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.31cqw;
+  color: #d54309;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 21.31cqw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 81px;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.45px #d54309;
+  text-shadow:
+    0.35px 0 #d54309,
+    -0.35px 0 #d54309;
+}
+
+.handwritten-word {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handwritten-word--exit {
+  width: 26.68%;
+  height: 11.5cqw;
+  rotate: -5.97deg;
+}
+
+.handwritten-word--interviews {
+  width: 71.17%;
+  height: 9.07cqw;
+  rotate: 0.18deg;
+}
+
+.handwritten-underline {
+  display: block;
+  width: min(851px, 93.01%);
+  height: auto;
+}
+
+.handwritten-letter {
+  display: inline-block;
+  opacity: 0;
+  clip-path: inset(-35% 100% -35% -8%);
+  transform: translateY(3px) rotate(-1deg);
+  animation: write-letter 210ms cubic-bezier(0.35, 0, 0.2, 1) forwards;
+}
+
+.date-stamp {
+  display: flex;
+  width: 21.31%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-stamp img {
+  display: block;
+  height: auto;
+  max-width: none;
+}
+
+.date-stamp img:first-child {
+  width: 50.86%;
+}
+
+.date-stamp img:last-child {
+  width: 47.79%;
+}
+
+@keyframes write-letter {
+  to {
+    opacity: 1;
+    clip-path: inset(-35% -8%);
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-title {
+    line-height: 8.85cqw;
+  }
+
+  .handwritten-title {
+    line-height: 8.85cqw;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .handwritten-letter {
+    animation-duration: 1ms;
+    animation-delay: 0ms;
+  }
+}
