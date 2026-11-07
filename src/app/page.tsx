@@ -7,6 +7,7 @@ import { Grid, GridContainer } from "@trussworks/react-uswds";
 import { BuilderLink } from './_components/builder-link';
 import { CarouselItem } from './_components/carousel-item';
 import { Hero } from './_components/hero';
+import { Viz } from './_components/viz';
 
 export default function Index() {
   return (
@@ -335,7 +336,7 @@ export default function Index() {
 
               <p>Interview participants held roles in agencies across the federal government and identified their work as digital service or civic technology. They typically came from outside of government, and often held relatively short term fellowships. Many had worked at 18F and the U.S. Digital Service, two groups often seen as the vanguard of the federal civic tech movement. For a sense of scale, 18F employed fewer than 100 people when it was disbanded, while USDS had more than 200 at the start of the second Trump administration. We also interviewed practitioners working in digital service roles at established agencies such as the Internal Revenue Service and Social Security Administration, including “teams of one” hired as an agency’s sole designer, product manager, or other digital specialist. Participants also varied in their federal tenure, allowing us to hear from both longtime civil servants and people who had entered government more recently.</p>
 
-              <code>TODO: Add graph code</code>
+              <Viz />
 
               <h2>Better Government Lab papers and case studies</h2>
 

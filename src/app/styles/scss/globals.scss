@@ -1,5 +1,6 @@
 @use "uswds-core" as *;
 @use "hero";
+@use "viz";
 
 @include at-media($theme-header-min-width) {
   // HEADER
