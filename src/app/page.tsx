@@ -12,7 +12,6 @@ export default function Index() {
   return (
     <main>
       <Hero />
-
       <section aria-label="Markdown content">
         <GridContainer>
           <Grid row>

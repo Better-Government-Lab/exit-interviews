@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .hero {
   display: grid;
-  min-height: 100dvh;
   place-items: center;
   overflow: hidden;
   padding: 2rem 1.25rem;
@@ -32,6 +25,7 @@
   letter-spacing: 0.97px;
   text-align: center;
   white-space: nowrap;
+  margin: 0;
 }
 
 .handwritten-block {
@@ -59,6 +53,8 @@
   text-shadow:
     0.35px 0 #d54309,
     -0.35px 0 #d54309;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .handwritten-word {
