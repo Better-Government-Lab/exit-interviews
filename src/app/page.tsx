@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Carousel } from 'nuka-carousel';
 
 import { Grid, GridContainer } from "@trussworks/react-uswds";
@@ -57,6 +58,18 @@ export default function Index() {
 
               <p>We view this work as part of a broader effort to better understand the relationship between technology and government. The archive of interviews is a public good available to all who care about this topic, including media, policymakers, civic technologists and researchers. The Better Government Lab is undertaking its own analysis of the interviews (you can find links to our papers below).</p>
 
+              <Image src="/assets/img/CMS-back.png"
+                width={250}
+                height={250}
+                alt='Challenge coin from Digital Services at Centers for Medicare and Medicaid Services (DSAC). It has the medical doctor symbol and the words "We the People" above it inside a teal green background'
+                className="challenge-coins challenge-coins--cms-r"
+              />
+              <Image src="/assets/img/CMS-front.png"
+                width={250}
+                height={250}
+                alt="Challenge coin from Digital Services at Centers for Medicare and Medicaid Services (DSAC). It has the DSAC logo inside a teal green background"
+                className="challenge-coins challenge-coins--cms-l"
+              />
               <h4>Chapter 1</h4>
 
               <h1 id="wins">Wins</h1>
@@ -137,6 +150,18 @@ export default function Index() {
                 </div>
               </div>
 
+              <Image src="/assets/img/usds-back.png"
+                width={250}
+                height={250}
+                alt='Challenge coin from the US Digital Service that shows the White House seal'
+                className="challenge-coins challenge-coins--usds-l"
+              />
+              <Image src="/assets/img/usds-front.png"
+                width={250}
+                height={250}
+                alt="Challenge coin from the US Digital Service, alternate side, that shows its logo"
+                className="challenge-coins challenge-coins--usds-r"
+              />
               <h4 className="text-right">Chapter 2</h4>
 
               <h1 id="barriers" className="text-right">Barriers to progress</h1>
@@ -202,6 +227,19 @@ export default function Index() {
                 </div>
               </div>
 
+              <Image src="/assets/img/18f-back.png"
+                width={250}
+                height={250}
+                alt=''
+                className="challenge-coins challenge-coins--18f-l"
+              />
+              <Image src="/assets/img/18f-front.png"
+                width={250}
+                height={250}
+                alt=''
+                className="challenge-coins challenge-coins--18f-r"
+              />
+
               <h4>Chapter 3</h4>
 
               <h1 id="end">The end of an era</h1>
@@ -264,6 +302,19 @@ export default function Index() {
                   </div>
                 </div>
               </div>
+
+              <Image src="/assets/img/df-back.png"
+                width={250}
+                height={250}
+                alt=''
+                className="challenge-coins challenge-coins--df-l"
+              />
+              <Image src="/assets/img/df-front.png"
+                width={250}
+                height={250}
+                alt=''
+                className="challenge-coins challenge-coins--df-r"
+              />
 
               <h4 className="text-right">Chapter 4</h4>
 

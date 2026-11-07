@@ -46,63 +46,171 @@
 }
 
 
-@include at-media("tablet") {
-  // content
-  .usa-prose {
+
+// content
+.usa-prose {
+  @include at-media("tablet") {
     h1, h2, h3, h4, p, ul, blockquote, .usa-card {
       @include u-maxw('tablet');
       @include u-margin-left('auto');
       @include u-margin-right('auto');
     }
+  }
 
-    h1 {
-      @include u-margin-top(1);
+  @include at-media-max('tablet') {
+    .usa-card {
+      @include u-maxw(20rem);
+    }
+  }
+
+  h1 {
+    @include u-margin-top(1);
+  }
+
+  h2 {
+    @include u-margin-top(3);
+    @include u-font('sans', 'xl')
+  }
+
+  h4 {
+    @include u-text('bold');
+    @include at-media("tablet") {
+      @include u-margin-top(neg-15);
+    }
+    @include at-media-max("tablet") {
+      @include u-margin-top(-360px);
+    }
+  }
+
+  >p {
+    @include u-font('sans', 'md');
+  }
+
+  // subhed
+  .subhed {
+    @include u-maxw('none');
+    @include u-font('sans', 'lg');
+  }
+
+  .blockquote {
+    @include u-font('sans', 'lg');
+    @include u-text('bold');
+  }
+}
+
+
+.challenge-coins {
+  position: relative;
+
+  &--cms {
+    @include at-media("tablet") {
+      &-r {
+        left: 658px;
+      }
+
+      &-l {
+        left: 294px;
+        bottom: 29px;
+      }
     }
 
-    h2 {
-      @include u-margin-top(3);
-      @include u-font('sans', 'xl')
+    @include at-media-max("tablet") {
+      &-r {
+        left: 200px;
+      }
+    
+      &-l {
+        left: 78px;
+        bottom: 294px
+      }
+    }
+  }
+
+  &--usds {
+    @include at-media("tablet") {
+      &-r {
+        left: -120px;
+        bottom: 18px;
+      }
     }
 
-    h4 {
-      color: #d54309;
-      @include u-text('bold');
+    @include at-media-max("tablet") {
+      &-l {
+        left: -75px;
+        bottom: 19px;
+      }
+
+      &-r {
+        left: 47px;
+        bottom: 333px;
+      }
+    }
+  }
+
+  &--18f {
+    @include at-media("tablet") {
+      &-r {
+        left: 383px;
+        bottom: -51px;
+      }
+
+      &-l {
+        left: 527px;
+        bottom: 63px;
+      }
     }
 
-    >p {
-      @include u-font('sans', 'md');
+    @include at-media-max("tablet") {
+      &-r {
+        left: 148px;
+        bottom: 320px;
+      }
+
+      &-l {
+        bottom: 73px;
+      }
+    }
+  }
+
+  &--df {
+    @include at-media("tablet") {
+      &-l {
+        left: 100px;
+        bottom: 69px;
+      }
+
+      &-r {
+        left: -252px;
+        bottom: -25px;
+      }
     }
 
-    // subhed
-    .subhed {
-      @include u-maxw('none');
-      @include u-font('sans', 'lg');
-    }
+    @include at-media-max("tablet") {
+      &-l {
+        left: -25px;
+        bottom: 74px;
+      }
 
-    .blockquote {
-      @include u-font('sans', 'lg');
-      @include u-text('bold');
-    }
-
-    .carousel-item {
-      flex-grow: 1;
-      flex-shrink: 0;
-      @include u-height('card');
-      @include u-width(36rem);
-      @include u-padding-left(7);
-      @include u-padding-right(7);
+      &-r {
+        left: 148px;
+        bottom: 320px;
+      }
     }
   }
 }
 
-@include at-media-max('tablet') {
-  .usa-prose .usa-card {
-    @include u-maxw(20rem);
+.carousel-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  @include at-media("tablet") {
+    @include u-height('card');
+    @include u-width(36rem);
+    @include u-padding-left(7);
+    @include u-padding-right(7);
   }
 
-  .carousel-item {
-    flex-grow: 1;
-    flex-shrink: 0;
+  @include at-media-max('tablet') {
     @include u-height('card-lg');
     @include u-width(16rem);
     @include u-padding-left(2);
