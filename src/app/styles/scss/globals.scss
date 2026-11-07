@@ -65,8 +65,8 @@
     }
 
     h4 {
-      color: #d54309;
       @include u-text('bold');
+      @include u-margin-top(15);
     }
 
     >p {
@@ -83,26 +83,120 @@
       @include u-font('sans', 'lg');
       @include u-text('bold');
     }
-
-    .carousel-item {
-      flex-grow: 1;
-      flex-shrink: 0;
-      @include u-height('card');
-      @include u-width(36rem);
-      @include u-padding-left(7);
-      @include u-padding-right(7);
-    }
   }
 }
 
+// small screens
 @include at-media-max('tablet') {
   .usa-prose .usa-card {
     @include u-maxw(20rem);
   }
+}
 
-  .carousel-item {
-    flex-grow: 1;
-    flex-shrink: 0;
+.challenge-coins {
+  position: absolute;
+
+  &--cms {
+    @include at-media("tablet") {
+      &-r {
+        right: 0;
+      }
+
+      &-l {
+        right: 98px;
+      }
+    }
+
+    @include at-media-max("tablet") {
+      &-r {
+        right: -75px;
+      }
+    
+      &-l {
+        right: 23px;
+      }
+    }
+  }
+
+  &--usds {
+    @include at-media("tablet") {
+      &-l {
+        left: 0;
+      }
+
+      &-r {
+        left: 98px
+      }
+    }
+
+    @include at-media-max("tablet") {
+      &-l {
+        left: -75px;
+      }
+
+      &-r {
+        left: 23px;
+      }
+    }
+  }
+
+  &--18f {
+    @include at-media("tablet") {
+      &-r {
+        right: 0;
+      }
+
+      &-l {
+        right: 98px;
+      }
+    }
+
+    @include at-media-max("tablet") {
+      &-r {
+        right: -75px;
+      }
+
+      &-l {
+        right: 23px;
+      }
+    }
+  }
+
+  &--df {
+    @include at-media("tablet") {
+      &-l {
+        left: 0;
+      }
+
+      &-r {
+        left: 98px
+      }
+    }
+
+    @include at-media-max("tablet") {
+      &-l {
+        left: -75px;
+      }
+
+      &-r {
+        left: 23px;
+      }
+    }
+  }
+}
+
+.carousel-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  @include at-media("tablet") {
+    @include u-height('card');
+    @include u-width(36rem);
+    @include u-padding-left(7);
+    @include u-padding-right(7);
+  }
+
+  @include at-media-max('tablet') {
     @include u-height('card-lg');
     @include u-width(16rem);
     @include u-padding-left(2);
