@@ -1,5 +1,7 @@
 'use client';
 
+const pagesBasePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || '';
+
 import Image from 'next/image';
 import { Carousel } from 'nuka-carousel';
 
@@ -45,7 +47,7 @@ export default function Index() {
 
               <p>We view this work as part of a broader effort to better understand the relationship between technology and government. The archive of interviews is a public good available to all who care about this topic, including media, policymakers, civic technologists and researchers. The Better Government Lab is undertaking its own analysis of the interviews (you can find links to our papers below).</p>
 
-              <Image src="/assets/img/CMS-back.png"
+              <Image src={`${pagesBasePath}/assets/img/CMS-back.png`}
                 width={250}
                 height={250}
                 alt='Challenge coin from Digital Services at Centers for Medicare and Medicaid Services (DSAC). It has the medical doctor symbol and the words "We the People" above it inside a teal green background'
