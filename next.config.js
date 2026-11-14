@@ -4,7 +4,7 @@ const path = require("path");
 const nextConfig = {
     output: "export",
     assetPrefix: './',
-    basePath: process.env.PAGES_BASE_PATH,
+    basePath: "exit_interviews",
     sassOptions: {
       loadPaths: [
         path.join(__dirname, "node_modules", "@uswds", "uswds", "packages"),
