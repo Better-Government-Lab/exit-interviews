@@ -3,9 +3,8 @@ const path = require("path");
 
 const nextConfig = {
     output: "export",
-    // basePath: "/exit-interviews",
-    reactStrictMode: true,
-    images: { unoptimized: true },
+    assetPrefix: './',
+    basePath: process.env.PAGES_BASE_PATH,
     sassOptions: {
       loadPaths: [
         path.join(__dirname, "node_modules", "@uswds", "uswds", "packages"),
