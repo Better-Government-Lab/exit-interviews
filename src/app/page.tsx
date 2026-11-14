@@ -53,7 +53,7 @@ export default function Index() {
                 alt='Challenge coin from Digital Services at Centers for Medicare and Medicaid Services (DSAC). It has the medical doctor symbol and the words "We the People" above it inside a teal green background'
                 className="challenge-coins challenge-coins--cms-r"
               />
-              <Image src="/assets/img/CMS-front.png"
+              <Image src={`${pagesBasePath}/assets/img/CMS-front.png`}
                 width={250}
                 height={250}
                 alt="Challenge coin from Digital Services at Centers for Medicare and Medicaid Services (DSAC). It has the DSAC logo inside a teal green background"
@@ -139,13 +139,13 @@ export default function Index() {
                 </div>
               </div>
 
-              <Image src="/assets/img/usds-back.png"
+              <Image src={`${pagesBasePath}/assets/img/usds-back.png`}
                 width={250}
                 height={250}
                 alt='Challenge coin from the US Digital Service that shows the White House seal'
                 className="challenge-coins challenge-coins--usds-l"
               />
-              <Image src="/assets/img/usds-front.png"
+              <Image src={`${pagesBasePath}/assets/img/usds-front.png`}
                 width={250}
                 height={250}
                 alt="Challenge coin from the US Digital Service, alternate side, that shows its logo"
@@ -216,13 +216,13 @@ export default function Index() {
                 </div>
               </div>
 
-              <Image src="/assets/img/18f-back.png"
+              <Image src={`${pagesBasePath}/assets/img/18f-back.png`}
                 width={250}
                 height={250}
                 alt=''
                 className="challenge-coins challenge-coins--18f-l"
               />
-              <Image src="/assets/img/18f-front.png"
+              <Image src={`${pagesBasePath}/assets/img/18f-front.png`}
                 width={250}
                 height={250}
                 alt=''
@@ -292,13 +292,13 @@ export default function Index() {
                 </div>
               </div>
 
-              <Image src="/assets/img/df-back.png"
+              <Image src={`${pagesBasePath}/assets/img/df-back.png`}
                 width={250}
                 height={250}
                 alt=''
                 className="challenge-coins challenge-coins--df-l"
               />
-              <Image src="/assets/img/df-front.png"
+              <Image src={`${pagesBasePath}/assets/img/df-front.png`}
                 width={250}
                 height={250}
                 alt=''

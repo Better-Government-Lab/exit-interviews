@@ -1,12 +1,14 @@
 const handwrittenWords = ['Exit', 'Interviews']
 
+const pagesBasePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || '';
+
 export function Hero() {
   return (
     <main className="hero">
       <section className="title-lockup" aria-labelledby="hero-title">
         <div className="date-stamp" aria-label="2025">
-          <img src="/assets/svg/b412e.svg" alt="" />
-          <img src="/assets/svg/5747c.svg" alt="" />
+          <img src={`${pagesBasePath}/assets/svg/b412e.svg`} alt="" />
+          <img src={`${pagesBasePath}/assets/svg/5747c.svg`} alt="" />
         </div>
 
         <h1 id="hero-title" className="hero-title">
@@ -29,7 +31,7 @@ export function Hero() {
               </span>
             ))}
           </p>
-          <img className="handwritten-underline" src="/assets/svg/b1aee.svg" alt="" />
+          <img className="handwritten-underline" src={`${pagesBasePath}/assets/svg/b1aee.svg`} alt="" />
         </div>
       </section>
     </main>
