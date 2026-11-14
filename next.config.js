@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
 
+const repoName = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || '';
+
 const nextConfig = {
     output: "export",
-    assetPrefix: '/exit-interviews',
-    basePath: "/exit-interviews",
+    assetPrefix: repoName,
+    basePath: repoName,
     images: {
       unoptimized: true,
     },
