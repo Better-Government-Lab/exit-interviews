@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { Carousel } from 'nuka-carousel';
 
 import { Grid, GridContainer } from "@trussworks/react-uswds";
-import { BuilderLink } from './_components/builder-link';
-import { CarouselItem } from './_components/carousel-item';
-import { Hero } from './_components/hero';
-import { Viz } from './_components/viz';
+import { BuilderLink } from '@/app/_components/builder-link';
+import { CarouselItem } from '@/app/_components/carousel-item';
+import { Hero } from '@/app/_components/hero';
+import { Viz } from '@/app/_components/viz';
 
 export default function Index() {
   return (
