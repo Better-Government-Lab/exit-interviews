@@ -4,7 +4,6 @@ const path = require("path");
 const nextConfig = {
     output: "export",
     assetPrefix: './exit_interviews',
-    basePath: "/exit_interviews",
     images: {
       unoptimized: true,
     },
