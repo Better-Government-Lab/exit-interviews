@@ -3,8 +3,11 @@ const path = require("path");
 
 const nextConfig = {
     output: "export",
-    assetPrefix: './',
+    assetPrefix: './exit_interviews',
     basePath: "/exit_interviews",
+    images: {
+      unoptimized: true,
+    },
     sassOptions: {
       loadPaths: [
         path.join(__dirname, "node_modules", "@uswds", "uswds", "packages"),
