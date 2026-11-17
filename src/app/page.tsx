@@ -18,7 +18,7 @@ export default function Index() {
       <section aria-label="Markdown content">
         <GridContainer>
           <Grid row>
-            <Grid className="usa-prose">
+            <Grid className="usa-prose padding-bottom-4">
               <p className="subhed">Voices from the frontlines of federal digital service work including the successes, challenges, and lessons learned from workers who separated from their roles between February–September 2025.</p>
 
               <h2>Introduction</h2>
@@ -330,7 +330,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <h4>Appendix</h4>
+              <h4 className="appendix">Appendix</h4>
 
               <h1 id="project">About the project</h1>
 
@@ -361,17 +361,6 @@ export default function Index() {
                 <li>Civic Tech Memory Bank (forthcoming)</li>
               </ul>
             </Grid>
-          </Grid>
-        </GridContainer>
-      </section>
-
-      <section
-        className="usa-graphic-list usa-section usa-section--dark"
-        aria-label="Contact information"
-        role="region"
-      >
-        <GridContainer>
-          <Grid row gap className="usa-graphic-list__row">
           </Grid>
         </GridContainer>
       </section>
