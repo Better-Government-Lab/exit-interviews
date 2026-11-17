@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Inter } from "next/font/google";
 import cn from "classnames";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
@@ -7,6 +6,7 @@ import { BuilderHeader } from "./_components/builder-header";
 import { BuilderFooter } from "./_components/builder-footer";
 
 import "./styles/scss/globals.scss";
+import { Contact } from "./_components/contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,6 +57,7 @@ export default function RootLayout({
       <body className={cn(inter.className)}>
         <BuilderHeader />
         {children}
+        <Contact />
         <BuilderFooter />
       </body>
     </html>

@@ -80,6 +80,10 @@
     @include at-media-max("tablet") {
       @include u-margin-top(-360px);
     }
+
+    &.appendix {
+      @include u-margin-top(4);
+    }
   }
 
   >p {
@@ -98,6 +102,22 @@
   }
 }
 
+.usa-section {
+  &--accent {
+    background-color: color("accent-warm-dark");
+    color: color("white");
+    
+    h2 {
+      color: color("white");
+      @include u-font('alt', '3xl');
+      font-family: 'Reenie Beanie', cursive;
+    }
+  }
+
+  &--dark {
+    background-color: color("black");
+  }
+}
 
 .challenge-coins {
   position: relative;
@@ -204,14 +224,12 @@
   flex-shrink: 0;
 
   @include at-media("tablet") {
-    @include u-height('card');
     @include u-width(36rem);
     @include u-padding-left(7);
     @include u-padding-right(7);
   }
 
   @include at-media-max('tablet') {
-    @include u-height('card-lg');
     @include u-width(16rem);
     @include u-padding-left(2);
     @include u-padding-right(2);
